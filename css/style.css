@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #30343f;
+}
+
+#all {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#board {
+  height: 70%;
+  width: 90%;
+  border: 3px solid #E4D9FF;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.cell {
+  border: 3px solid #E4D9FF;
+}
+
+.choose {
+  background: url("../img/dibujo.svg");
+  background-size: cover;
+}
+
+.choosePc {
+  background: url("../img/dibujo2.svg");
+  background-size: cover;
+}
+
+@media (min-width: 900px) {
+  #board {
+    height: 70%;
+    width: 40%;
+    border: 3px solid #E4D9FF;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
